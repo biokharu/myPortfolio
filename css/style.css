@@ -19,22 +19,24 @@ p {
     padding: 0;
 }
 
-body {
-    margin: 0;
-    font-family: "Montserrat", sans-serif;
-    font-weight: 400;
-}
-
 :root {
     --accent-color: #603935;
     --second-color: #c4b0a7;
     --third-color: #f8e2c3;
 }
 
+body {
+    margin: 0;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    color: var(--second-color);
+}
+
+
+
 .header {
     display: grid;
     grid-template-columns: repeat(2,1fr);
-    background-color: var(--accent-color);
 }
 
 .container {
@@ -91,12 +93,14 @@ body {
 }
 
 .container__2 {
+    background-color: var(--accent-color);
     display: flex;
     justify-items: center;
     align-items: center;
+}
+.div__img{
     margin: 0 auto;
 }
-
 .my__photo {
     width: 400px;
     border-radius: 100%;
